@@ -15,5 +15,6 @@ and build-priority decisions).
 | [docs/02-trading-intelligence.md](docs/02-trading-intelligence.md) | MarketMind — financial RAG + paper-trading engine |
 | [docs/03-ecommerce-ai.md](docs/03-ecommerce-ai.md) | Atelier — premium AI storefront (stretch) |
 | [docs/04-personal-ai-os.md](docs/04-personal-ai-os.md) | Cortex — personal AI assistant shell |
+| [docs/07-youtube-video-platform.md](docs/07-youtube-video-platform.md) | StudioForge — AI video factory (educational, manga, own-face avatar) |
 | [docs/05-execution-plan.md](docs/05-execution-plan.md) | 90-day plan, milestones, repo structure |
 | [docs/06-operating-manual.md](docs/06-operating-manual.md) | Daily usage, prompts, maintenance, model continuity |

@@ -16,7 +16,8 @@ You asked for four systems. Before designing them, here is the honest architectu
 | 1. Job Search Automation | **Very high** — directly produces interviews | **Very high** (hours/day) | Medium | **Build first. This is the product.** |
 | 4. Personal AI OS | High — but 70% of its value *is* System 1 | High | Low if scoped | **Merge into System 1's platform. Build "lite" version.** |
 | 2. Trading Intelligence | High as a *portfolio piece* (RAG + pipelines + evaluation are exactly what AI Engineer JDs ask for) | None | High | **Build as portfolio project #1, paper-trading only. Real money is out of scope for 90 days.** |
-| 3. AI E-commerce | Medium — full-stack + AI demo, but the market is flooded with AI storefront demos | None | Medium | **Optional / stretch. Build only a tightly-scoped polished demo, or skip.** |
+| 3. AI E-commerce | Medium — full-stack + AI demo, but the market is flooded with AI storefront demos | None | Medium | **Moved to backlog — its stretch slot goes to System 5, which has strictly more career + income upside.** |
+| 5. YouTube Video Factory | High — personal brand compounds the job search (incl. teaching roles: lecture samples), plus a real income path and a rare multimodal-pipeline portfolio piece | Medium (per video: ~10 h manual → ~2 h review) | Medium | **Build in the stretch slot (weeks 11–12): avatar + educational line first; manga line only after the copyright question is settled per doc 07 §11.** |
 
 ### Complexity removed (decisions already made — don't relitigate them daily)
 
@@ -43,6 +44,7 @@ Yes, **if** the priority order is respected: System 1 MVP is ~2–3 weeks of foc
 | [02-trading-intelligence.md](02-trading-intelligence.md) | System 2: market data pipeline, financial RAG, paper-trading engine, safeguards |
 | [03-ecommerce-ai.md](03-ecommerce-ai.md) | System 3: scoped premium AI storefront demo |
 | [04-personal-ai-os.md](04-personal-ai-os.md) | System 4: email/calendar/knowledge/productivity agents on the shared platform |
+| [07-youtube-video-platform.md](07-youtube-video-platform.md) | System 5: AI video factory — educational explainers, manga narration, own-face avatar videos |
 | [05-execution-plan.md](05-execution-plan.md) | 90-day plan, weekly milestones, repo & documentation structure |
 | [06-operating-manual.md](06-operating-manual.md) | Daily usage, prompt library, maintenance, cheap-model continuity plan |
 

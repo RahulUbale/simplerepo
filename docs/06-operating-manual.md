@@ -24,6 +24,9 @@ How to run this ecosystem daily, keep it healthy, and keep improving it with any
 ### Weekly (Friday, ~1 h)
 Analytics review (response rate by version/family — act on it monthly, observe weekly) · accept/reject automation suggestions · check MarketMind eval scores and ingestion health · `docker compose ps` + backup verification (one runbook command) · 15-min retro note in `docs/retro/`.
 
+### Weekly video block (once StudioForge is live, ~2 h total)
+Pick next topic from `topic-scout` proposals (10 min) → review/edit the generated script — you are checking facts and voice, not writing (30 min) → later that day: watch the draft render, pick a thumbnail (20 min) → publish from the review queue (5 min). One video/week is the floor; never publish an unwatched render.
+
 ---
 
 ## 2. Required prompts (the prompt library)
@@ -96,10 +99,10 @@ Every workflow starts at level 2 and earns promotion — this is how the system 
 |---|---|---|
 | 0 | Manual | Final submit on job portals; sending any email; anything with money |
 | 1 | Model assists on request | Interview drilling, odd-JD handling |
-| 2 | Model drafts, you approve | Resumes, letters, statements, replies, trades beyond paper |
-| 3 | Auto with review queue | JD extraction, visa verdicts, email classification, sentiment scores |
-| 4 | Fully auto | Capture, scoring, tracking, follow-up reminders, briefings, backups, evals |
+| 2 | Model drafts, you approve | Resumes, letters, statements, replies, trades beyond paper; **video scripts and publishing** (uploads stay private until you watch and approve) |
+| 3 | Auto with review queue | JD extraction, visa verdicts, email classification, sentiment scores, manga panel/reading-order detection, thumbnails/metadata variants |
+| 4 | Fully auto | Capture, scoring, tracking, follow-up reminders, briefings, backups, evals, TTS/avatar rendering and video assembly, YouTube analytics sync |
 
-**Promotion rule:** a workflow moves up one level after ~50 consecutive outputs you approved without edits (the `events` table gives you this number). **Demotion rule:** one materially-wrong output drops it back down. Submission, sending, and real-money trading are permanently capped at their listed levels.
+**Promotion rule:** a workflow moves up one level after ~50 consecutive outputs you approved without edits (the `events` table gives you this number). **Demotion rule:** one materially-wrong output drops it back down. Submission, sending, real-money trading, and publishing videos in your face/voice are permanently capped at their listed levels.
 
 The end state after 90 days: your manual work is *judgment* — approving diffs, talking to humans, performing in interviews — and the system does everything else.

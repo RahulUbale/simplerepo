@@ -5,7 +5,7 @@
 1. **System 1 — JobOps** (weeks 1–5): produces interviews directly; every later week benefits from it running.
 2. **System 2 — MarketMind** (weeks 6–8): the strongest portfolio artifact for AI/Data Engineer roles.
 3. **System 4 — Cortex-lite** (weeks 9–10): cheap to build on System 1's platform; locks in daily time savings.
-4. **Polish & publish** (weeks 11–13): demos, writing, and — only if ahead of schedule — System 3.
+4. **System 5 — StudioForge + publish** (weeks 11–13): the video factory takes the stretch slot (avatar + educational line); System 3 (Atelier) moves to backlog — see the verdict table in [README.md](README.md).
 
 **Standing rule from week 2:** apply to jobs *through the system* every weekday (target: 5 quality applications/day industry, plus academic postings as they appear). The job search is the product's production traffic; building without applying is failure.
 
@@ -40,9 +40,9 @@
 
 | Week | Milestone | Definition of done |
 |---|---|---|
-| 11 | Portfolio packaging | Both public repos: architecture README (reuse these docs), demo video, live demo where safe; blog post #1 (financial RAG evals); resume/LinkedIn updated with the projects |
-| 12 | Stretch: Atelier MVP *or* deepen MarketMind | If pipeline metrics healthy → System 3 storefront MVP; else transcript-diffing + eval dashboard |
-| 13 | Retro + steady state | Response-rate analysis → resume improvements; Operating Manual routines fully adopted; backlog groomed for post-90-day cadence |
+| 11 | StudioForge MVP part 1 + portfolio packaging | Voice clone + avatar set up; text → script → cloned VO → avatar render → assembled video → **first real video uploaded (private) and published after review**. In parallel: public repos get architecture READMEs, demo video, resume/LinkedIn updated |
+| 12 | StudioForge MVP part 2 | Production board, packager (titles/thumbnails/metadata), analytics sync, Shorts auto-cut; 2 more videos published; blog post #1 (financial RAG evals) |
+| 13 | Retro + steady state | Response-rate analysis → resume improvements; Operating Manual routines fully adopted (incl. 1 video/week at ~2 h); manga-line go/no-go decided per doc 07 §11; backlog groomed (Atelier, MarketMind advanced) |
 
 **Weekly rhythm:** Mon–Thu build (2–4 h/day) + apply daily via JobOps; Fri: 1 h maintenance (see Operating Manual) + weekly retro note; interviews always preempt build time — that's the system working, not a schedule slip.
 
@@ -77,7 +77,16 @@ marketmind/                  # PUBLIC — System 2
 ├── prompts/  evals/  infra/  migrations/  docs/  notebooks/
 └── README.md                # architecture + demo video + DISCLAIMER
 
-atelier/                     # PUBLIC — System 3 (stretch)
+studioforge/                 # System 5 — pipeline code PUBLIC; media/voice assets PRIVATE (S3 only)
+├── apps/{api,web}/          # production board UI shares the jobops dashboard component kit
+├── pipeline/
+│   ├── script/  tts/  avatar/  manga/   # asset plugins behind one interface
+│   └── assemble/            # Remotion compositions + ffmpeg timeline
+├── prompts/  evals/         # incl. labeled manga chapter for panel/OCR evals
+├── infra/                   # compose + per-render GPU job templates (Modal/RunPod)
+└── docs/                    # incl. rights-policy.md (doc 07 §11 distilled)
+
+atelier/                     # PUBLIC — System 3 (backlog)
 ├── apps/{storefront,brain}/ # Next.js on Vercel; FastAPI assistant/embeddings
 ├── prompts/  evals/  seed/  docs/
 ```
